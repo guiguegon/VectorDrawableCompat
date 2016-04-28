@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.guiguegon.vectordrawablecompat.MainActivity">
+
+    <TextView
+        android:id="@+id/vector_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="VectorDrawableCompat"/>
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vector_text"
+        app:srcCompat="@drawable/ic_add_vector"/>
+
+    <TextView
+        android:id="@+id/png_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Imagen"/>
+
+    <ImageView
+        android:id="@+id/png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/png_text"
+        app:srcCompat="@drawable/ic_add_black_24dp"/>
+
+
+    <TextView
+        android:id="@+id/vector_text_scaled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/vector"
+        android:text="VectorDrawableCompat escalado"/>
+
+    <ImageView
+        android:id="@+id/vector_scaled"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/vector_text_scaled"
+        app:srcCompat="@drawable/ic_add_vector"/>
+
+    <TextView
+        android:id="@+id/png_text_scaled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/png"
+        android:text="Imagen escalada"/>
+
+    <ImageView
+        android:id="@+id/png_scaled"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/png_text_scaled"
+        app:srcCompat="@drawable/ic_add_black_24dp"/>
+</RelativeLayout>
